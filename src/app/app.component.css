@@ -1,0 +1,22 @@
+.loaderText{
+    /* Positioning */
+    color: dodgerblue; 
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    
+    /* Animation */
+    animation: move 2s infinite ease-in-out alternate forwards;
+}
+
+@keyframes move{
+    0%{
+       transform:translate(-50%,-25%) skewX(0deg);
+    }
+    50%{
+       transform:translate(-50%,-25%) skewX(-7deg);
+    }
+    100%{
+       transform:translate(-50%,-25%) skewX(7deg);
+    }
+}
